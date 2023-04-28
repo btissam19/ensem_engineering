@@ -101,13 +101,17 @@
           Nous connaître
       </button>
     </section>
-    <div id="carouselExampleControls" class="carousel slide d-flex align-items-center justify-content-center" data-bs-ride="carousel">
+<div id="carouselExampleControls" class="carousel slide d-flex align-items-center justify-content-center" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="images/pic1 edited.png" class="d-block w-100" alt="...">
+          <div class="d-flex align-items-center justify-content-center">
+            <img src="images/pic1 edited.png" class="d-block" alt="...">
+          </div>
         </div>
         <div class="carousel-item">
-          <img src="images/pic 2.png" class="d-block w-100" alt="...">
+          <div class="d-flex align-items-center justify-content-center">
+            <img src="images/pic 2.png" class="d-block" alt="...">
+          </div>
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -119,6 +123,18 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+    
+    <style>
+      @media (max-width: 576px) {
+        #carouselExampleControls .carousel-inner .carousel-item {
+          width: 100%;
+        }
+        #carouselExampleControls .carousel-inner .carousel-item img {
+          max-width: 100%;
+        }
+      }
+    </style>
+    
     
     
     <!--end about us-->
